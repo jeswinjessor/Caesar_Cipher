@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="364.0" prefWidth="476.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.Controller">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Text fill="WHITE" fontSmoothingType="LCD" layoutX="185.0" layoutY="52.0" stroke="#404040" strokeType="OUTSIDE" strokeWidth="10.0" text="Caesar Cipher" />
+    <Text layoutX="63.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" />
+    <Text layoutX="65.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Key" />
+    <Text layoutX="65.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result" />
+    <TextField fx:id="txtMessage" layoutX="164.0" layoutY="130.0" prefWidth="200.0" promptText="Enter The Message" />
+    <TextField fx:id="txtKey" layoutX="165.0" layoutY="169.0" prefWidth="200.0" promptText="Enter The Key" />
+    <TextField fx:id="txtResult" editable="false" layoutX="167.0" layoutY="258.0" prefWidth="200.0" promptText="Result..." />
+    <Button fx:id="btn1" layoutX="155.0" layoutY="208.0" mnemonicParsing="false" text="Encryption" onAction="#Encryption"/>
+    <Button fx:id="btn2" layoutX="274.0" layoutY="209.0" mnemonicParsing="false" text="Decryption" onAction="#Decryption"/>
+  </children>
+</AnchorPane>
